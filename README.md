@@ -33,6 +33,32 @@ With the Gemini CLI you can:
    gemini
    ```
 
+***For Windows**
+
+_Command Prompt_
+
+```cmd
+:: The path is typically %LocalAppData%\npm-cache\_npx
+rmdir /s /q "%LocalAppData%\npm-cache\_npx"
+```
+
+_PowerShell_
+
+```powershell
+# The path is typically $env:LocalAppData\npm-cache\_npx
+Remove-Item -Path (Join-Path $env:LocalAppData "npm-cache\_npx") -Recurse -Force
+```
+
+### Method 2: Using npm (Global Install)
+
+If you installed the CLI globally (e.g., `npm install -g @google/gemini-cli`), use the `npm uninstall` command with the `-g` flag to remove it.
+
+```bash
+npm uninstall -g @google/gemini-cli
+```
+
+This command completely removes the package from your system.
+
 3. **Pick a color theme**
 4. **Authenticate:** When prompted, sign in with your personal Google account. This will grant you up to 60 model requests per minute and 1,000 model requests per day using Gemini.
 
