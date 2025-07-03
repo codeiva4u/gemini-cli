@@ -33,7 +33,7 @@ With the Gemini CLI you can:
    gemini
    ```
 
-***For Windows**
+*For Windows Unistall**
 
 _Command Prompt_
 
